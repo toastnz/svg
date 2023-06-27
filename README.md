@@ -1,13 +1,13 @@
 # SilverStripe SVG Variable Module
 
-This module enables the usage of the `$SVG('SVG_FILE_NAME')` variable in SilverStripe templates. It allows you to easily include SVG files within your templates by referencing their file names.
+This module enables the usage of the `$SVG('SVG_FILE_NAME')` variable in SilverStripe templates and block templates. It allows you to easily include SVG files within your templates by referencing their file names.
 
 ## Installation
 
 To install this module, you can use Composer:
 
 ```bash
-composer require toastnz/silverstripe-svg-variable
+composer require toastnz/svg
 ```
 
 ## Configuration
