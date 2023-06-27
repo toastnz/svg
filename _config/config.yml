@@ -1,1 +1,12 @@
 # see https://docs.silverstripe.org/en/developer_guides/configuration/configuration/
+---
+Name: toastnz-silverstripesvg
+---
+
+PageController:
+  extensions: 
+    - Toast\SilverstripeSVG\Extensions\PageControllerExtension
+
+Toast\Blocks\Block:
+  extensions:
+    - Toast\SilverstripeSVG\Extensions\BlockExtension
