@@ -2,6 +2,7 @@
 
 namespace Toast\SilverstripeSVG\Helpers;
 
+use SilverStripe\Control\Director;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\ORM\FieldType\DBHTMLText;
@@ -13,7 +14,9 @@ class Helper
         // get base_path from config
         $folderPath = Config::inst()->get('Page', 'svg_base_path');
         $extension = '.svg';
-        $baseFilePath = BASE_PATH . $folderPath . $fileName . $extension;
+        $basePublicPath = Director::publicFolder();
+        
+        $baseFilePath = $basePublicPath . $folderPath . $fileName . $extension;
 
          if (!file_exists( $baseFilePath )) {
              return false;
