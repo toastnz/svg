@@ -2,6 +2,7 @@
 
 namespace Toast\SilverstripeSVG\Extensions;
 
+use SilverStripe\Control\Director;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\ORM\FieldType\DBHTMLText;
