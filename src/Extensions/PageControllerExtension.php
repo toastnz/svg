@@ -16,7 +16,7 @@ class PageControllerExtension extends DataExtension
         $folderPath = Config::inst()->get('Page', 'svg_base_path');
         $basePublicPath = Director::publicFolder();
         $extension = '.svg';
-        $baseFilePath = $$basePublicPath . $folderPath . $fileName . $extension;
+        $baseFilePath = $basePublicPath . $folderPath . $fileName . $extension;
 
          if (!file_exists( $baseFilePath )) {
              return false;
