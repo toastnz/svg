@@ -6,9 +6,9 @@ use SilverStripe\Control\Director;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\ORM\FieldType\DBHTMLText;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 
-class PageControllerExtension extends DataExtension
+class PageControllerExtension extends Extension
 {
     public function SVG($fileName)
     {
