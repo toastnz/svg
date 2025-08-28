@@ -2,10 +2,10 @@
 
 namespace Toast\SilverstripeSVG\Extensions;
 
+use SilverStripe\Core\Extension;
 use Toast\SilverstripeSVG\Helpers\Helper;
-use SilverStripe\ORM\DataExtension;
 
-class BlockExtension extends DataExtension
+class BlockExtension extends Extension
 {
     public function SVG($fileName)
     {
